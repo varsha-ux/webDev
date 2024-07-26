@@ -111,3 +111,18 @@ body,
   object-fit: cover;
   object-position: 10% 30%;
 }
+
+@media screen and (min-width: 1920px) {
+  .nav2 {
+    font-size: 17px;
+  }
+  #bar {
+    font-size: 1.5rem;
+  }
+  .content1 {
+    height: 40%;
+  }
+  .content2 {
+    height: 60%;
+  }
+}

@@ -5,192 +5,109 @@
 }
 
 html,
-body {
+body,
+.main {
   height: 100%;
   width: 100%;
-}
-.left {
-  width: 60%;
-  height: 100%;
-  padding-top: 2%;
 }
 
 .main {
+  background-color: rgb(246, 236, 221);
+}
+
+#nav {
+  height: 8%;
+  width: 100%;
+  padding: 1% 1%;
   display: flex;
+  align-items: center;
 }
-.title h1 {
+
+.nav1 {
+  height: 30%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 2%;
+}
+.nav2 {
+  height: 30%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 4%;
+  padding-right: 2%;
+  cursor: pointer;
   font-family: sans-serif;
-  font-weight: lighter;
-  font-size: 5rem;
+  font-size: 14px;
+}
+.sym {
+  height: 1rem;
+  width: 1rem;
+  background-color: black;
+  border-radius: 50%;
 }
 
-.title {
-  padding: 4% 7%;
-  width: 60%;
-  padding-bottom: 9%;
+.country {
+  color: rgb(179, 177, 177);
 }
 
-.color {
+#bar {
+  height: 8%;
+  width: 63%;
+  font-family: sans-serif;
   display: flex;
   justify-content: space-around;
-  border: 1.5px solid black;
-  border-radius: 52px / 49px;
-  padding: 0.5% 0.5%;
-  margin-left: 7%;
-  width: 18%;
-}
-
-.color h6 {
-  font-family: sans-serif;
-  font-weight: lighter;
-  font-size: 1rem;
-}
-
-.color1 {
-  border: 10px solid rgb(5, 18, 88);
-  border-radius: 50%;
   cursor: pointer;
+  letter-spacing: -1px;
+  gap: 1%;
+  padding: 0% 1%;
 }
-.color2 {
-  border: 10px solid rgb(220, 139, 153);
-  border-radius: 50%;
-  cursor: pointer;
-}
-
-.color1:active {
-  border: 10px solid rgb(34, 52, 143);
+#bar:hover {
+  text-decoration-line: underline;
 }
 
-.color2:active {
-  border: 10px solid rgb(241, 175, 186);
-}
-
-.text {
-  width: 80%;
-  padding: 4% 7%;
-}
-
-.text details {
-  font-family: sans-serif;
-  font-weight: lighter;
-  font-size: 1rem;
-}
-.text summary {
-  font-family: sans-serif;
-  font-weight: bold;
-  font-size: 1rem;
-}
-
-details > summary {
-  list-style: none;
-}
-
-.right {
-  width: 40%;
-  padding-top: 2%;
-}
-
-.title-2 {
-  display: flex;
-  justify-content: space-between;
-  padding: 3rem 3rem 1rem 3rem;
-  font-family: sans-serif;
-  font-weight: lighter;
-  font-size: 1rem;
-}
-.cost {
-  padding-top: 1%;
-}
-
-.star {
-  color: rgb(131, 126, 126);
-  cursor: pointer;
-}
-.mark {
-  color: black;
-  font-size: 1.1rem;
-}
-
-.title-3 {
-  display: flex;
-  /* justify-content: space-between; */
-  height: 100%;
+#content {
+  height: 84%;
   width: 100%;
 }
-.item {
-  font-family: sans-serif;
-  font-weight: lighter;
-  font-size: 1rem;
-  transform: rotate(-90deg);
-  width: 200px;
-  height: 80px;
+
+.content1 {
+  width: 100%;
+  height: 45%;
+  display: flex;
+  overflow-x: auto;
 }
 
-.image {
-  background-image: url(https://images.unsplash.com/photo-1517941823-815bea90d291?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+.content1::-webkit-scrollbar {
+  background: transparent;
+  height: 5px;
+}
+.content1::-webkit-scrollbar-thumb {
+  background-color: rgb(247, 124, 79);
+}
+
+.text-block {
   height: 100%;
-  width: 80%;
-  margin-right: 10%;
-  background-size: cover;
-  background-position: center;
+  width: 50%;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-family: "SVN-Gilroy", sans-serif;
+  font-size: 7rem;
 }
 
-.cart {
-  position: absolute;
-  border: 48px solid black;
-  border-radius: 50%;
-  color: white;
-  font-size: 14px;
-  padding-top: 0.5%;
-  background-color: black;
-  left: 89%;
-  top: 30%;
+.content2 {
+  height: 55%;
+  width: 100%;
 }
 
-.blue {
+.content2 img {
   height: 100%;
-  width: 20%;
-}
-
-.p2 {
-  height: 4%;
-  width: 9%;
-  top: 87%;
-  left: 62%;
-  position: absolute;
-  rotate: 270deg;
-}
-
-@media screen and (min-width: 1920px) {
-  .left {
-    padding-top: 12%;
-  }
-
-  .title h1 {
-    font-size: 7rem;
-  }
-
-  .color {
-    width: 12%;
-  }
-
-  .text details {
-    font-size: 21px;
-  }
-
-  .right {
-    padding-top: 12%;
-  }
-
-  .cart {
-    font-size: 13px;
-
-    left: 92%;
-    top: 45%;
-  }
-
-  .p2 {
-    top: 80%;
-    left: 62%;
-  }
+  width: 100%;
+  object-fit: cover;
+  object-position: 10% 30%;
 }

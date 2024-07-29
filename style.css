@@ -171,6 +171,9 @@ body,
     font-size: 20vw;
     font-weight: 500;
   }
+  .text-block:nth-child(1) {
+    width: 82%;
+  }
 
   .text-block:nth-child(3) {
     padding-left: 18%;

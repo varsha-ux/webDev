@@ -134,7 +134,7 @@ body,
 
 @media (max-width: 600px) {
   .main .nav2 span {
-    font-size: 17px;
+    font-size: 4vw;
     display: none;
   }
   .nav2 span:nth-child(1),
@@ -143,8 +143,15 @@ body,
   }
   .nav2 h4 {
     display: initial;
-    font-size: 18px;
+    font-size: 5vw;
     padding-left: 12%;
+    font-weight: 600;
+  }
+  #bar {
+    height: 5%;
+    font-size: 3vw;
+    gap: 5%;
+    padding: 0% 3%;
   }
   /* #bar {
     font-size: 1.5rem;
@@ -156,4 +163,3 @@ body,
     height: 60%;
   } */
 }
-

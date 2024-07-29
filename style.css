@@ -132,9 +132,8 @@ body,
   }
 }
 
-@media screen and (max-width: 600px) {
-  
-  .nav2 span {
+@media (max-width: 600px) {
+  .main .nav2 span {
     font-size: 17px;
     display: none;
   }
@@ -157,3 +156,4 @@ body,
     height: 60%;
   } */
 }
+

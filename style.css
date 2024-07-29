@@ -69,6 +69,7 @@ body,
   letter-spacing: -1px;
   gap: 1%;
   padding: 0% 1%;
+  cursor: all-scroll;
 }
 #bar:hover {
   text-decoration-line: underline;
@@ -84,6 +85,23 @@ body,
   height: 45%;
   display: flex;
   overflow-x: auto;
+}
+
+.content1 .left {
+  position: absolute;
+  margin: 3% 1%;
+  padding: 5% 14%;
+  cursor: pointer;
+  color: transparent;
+}
+
+.content1 .right {
+  position: absolute;
+  margin: 3% 1%;
+  left: 70%;
+  padding: 5% 14%;
+  cursor: pointer;
+  color: transparent;
 }
 
 .content1::-webkit-scrollbar {
@@ -171,12 +189,11 @@ body,
     font-size: 20vw;
     font-weight: 500;
   }
-  .text-block:nth-child(1) {
+  .text-block:nth-child(2) {
     width: 82%;
   }
-
-  .text-block:nth-child(3) {
-    padding-left: 18%;
+  .text-block:nth-child(4) {
+    padding-left: 10%;
   }
 
   .content2 {

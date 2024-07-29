@@ -150,12 +150,12 @@ body,
   #bar {
     height: 5%;
     font-size: 3vw;
-    gap: 2%;
+    gap: 5%;
     padding: 0% 3%;
     letter-spacing: 0px;
   }
 
-  #bar span:nth-last-child(-n + 3) {
+  #bar span:nth-last-child(-n + 2) {
     display: none;
   }
 

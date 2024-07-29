@@ -183,6 +183,10 @@ body,
   .content1 {
     height: 30%;
   }
+  .content1 .left,
+  .content1 .right {
+    padding: 22% 14%;
+  }
 
   .text-block {
     width: 95%;

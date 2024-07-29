@@ -102,7 +102,7 @@ body,
   align-items: center;
   justify-content: space-evenly;
   font-family: "SVN-Gilroy", sans-serif;
-  font-size: 7rem;
+  font-size: 9vw;
 }
 
 .content2 {
@@ -150,16 +150,33 @@ body,
   #bar {
     height: 5%;
     font-size: 3vw;
-    gap: 5%;
+    gap: 2%;
     padding: 0% 3%;
+    letter-spacing: 0px;
   }
-  /* #bar {
-    font-size: 1.5rem;
+  #content {
+    height: 87%;
   }
   .content1 {
-    height: 40%;
+    height: 30%;
   }
+
+  .text-block {
+    width: 95%;
+    font-size: 20vw;
+    font-weight: 500;
+  }
+
+  .text-block:nth-child(3) {
+    padding-left: 18%;
+  }
+
   .content2 {
-    height: 60%;
-  } */
+    height: 70%;
+    width: 100%;
+  }
+
+  .content2 img {
+    object-position: 45% 30%;
+  }
 }

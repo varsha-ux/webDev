@@ -43,6 +43,11 @@ body,
   font-family: sans-serif;
   font-size: 14px;
 }
+
+.nav2 h4 {
+  display: none;
+}
+
 .sym {
   height: 1rem;
   width: 1rem;
@@ -125,4 +130,32 @@ body,
   .content2 {
     height: 60%;
   }
+}
+
+@media screen and (max-width: 600px) {
+  .main {
+    width: 106%;
+  }
+  .nav2 span {
+    font-size: 17px;
+    display: none;
+  }
+  .nav2 span:nth-child(1),
+  .nav2 span:nth-child(2) {
+    display: initial;
+  }
+  .nav2 h4 {
+    display: initial;
+    font-size: 18px;
+    padding-left: 12%;
+  }
+  /* #bar {
+    font-size: 1.5rem;
+  }
+  .content1 {
+    height: 40%;
+  }
+  .content2 {
+    height: 60%;
+  } */
 }
